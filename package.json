@@ -6,6 +6,7 @@
   "scripts": {
     "start": "ng serve",
     "build": "ng build --prod",
+    "postinstall": "ng build --aot -prod",
     "build:aot": "ngc -p src/tsconfig-aot.json && rollup -c src/rollup-config.js"
   },
   "keywords": [],
