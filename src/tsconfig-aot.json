@@ -1,0 +1,23 @@
+{
+  "extends": "../tsconfig.json",
+  "compilerOptions": {
+    "outDir": "../out-tsc/app",
+    "baseUrl": "./",
+    "module": "es2015",
+    "types": []
+  },
+  "files": [
+    "app/app.module.ts",
+    "main.ts"
+  ],
+
+  "angularCompilerOptions": {
+   "genDir": "aot",
+   "skipMetadataEmit" : true
+ },
+  "exclude": [
+    "test.ts",
+    "**/*.spec.ts",
+    "**/testing/*"
+  ]
+}
